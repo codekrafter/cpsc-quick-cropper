@@ -1,0 +1,35 @@
+{
+  "name": "Quick Cropper",
+  "version": "1.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "permissions": [
+    "fileSystem",
+    "fileSystem.write"
+  ],
+  "commands": {
+    "open-file": {
+      "suggested_key": {
+        "default": "Ctrl+O",
+        "chromeos": "Ctrl+O"
+      },
+      "description": "Open a File"
+    },
+    "save-file": {
+      "suggested_key": {
+        "default": "Ctrl+S"
+      },
+      "description": "Save a File"
+    }
+  },
+  "icons": {
+    "16": "icon128.png",
+    "128": "icon128.png"
+  }
+}
